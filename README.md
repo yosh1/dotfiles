@@ -1,2 +1,1 @@
-# Alias
-It is iTerm alias.
+# dotfiles
