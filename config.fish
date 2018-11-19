@@ -1,3 +1,5 @@
+set -g -x PATH /usr/local/bin $PATH
+
 # fish theme
 set fish_theme yimmy
 
@@ -10,9 +12,6 @@ alias gc "git commit -m"
 alias p3 "python3"
 alias python "python3"
 alias pip "pip3"
-
-# fish 
-alias fish-config ".config/fish/config.fish"
 
 # Vim
 alias vi "vim"
@@ -30,7 +29,6 @@ alias ds "sudo docker search"
 alias dst "sudo docker stop"
 alias dpl "sudo docker pull"
 alias dps "sudo docker ps"
-alias drm 'sudo docker rm $(docker ps -aq)'
 alias drmi "sudo docker rmi"
 alias dv "sudo docker volume"
 
@@ -42,4 +40,3 @@ alias npm "sudo npm"
 
 #yarn
 alias yarn "sudo yarn"
-
