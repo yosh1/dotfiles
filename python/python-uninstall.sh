@@ -6,8 +6,8 @@ sudo rm ~/.bash_profile.pysave
 
 sudo rm -rf /usr/local/bin/.pyenv/
 
-find /usr/local/bin | grep pyenv | xargs rm
-find /usr/local/bin | grep virtual | xargs rm
+sudo find /usr/local/bin | grep pyenv | xargs rm
+sudo find /usr/local/bin | grep virtual | xargs rm
 
-brew uninstall pyenv
-brew uninstall pyenv-virtualenv
+sudo brew uninstall pyenv
+sudo brew uninstall pyenv-virtualenv
