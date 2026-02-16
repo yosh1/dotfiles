@@ -1,0 +1,44 @@
+# フォントサイズ（お好みで調整してください）
+font-size = 14
+# 行間を少し広げてモダンにする（10%〜20%くらいが人気）
+adjust-cell-height = 10%
+# フォントファミリー（Nerd Font でアイコン表示対応）
+font-family = "Hack Nerd Font Mono"
+
+# テーマ（トレンドのCatppuccinを採用。飽きたら "Tokyo Night" もおすすめ）
+theme = black-yellow
+
+# --- ウィンドウ・透明度 ---
+# 背景を透過させてブラー（すりガラス効果）を入れる
+background-opacity = 0.45
+background-blur-radius = 80
+
+# ウィンドウ内の余白を入れて圧迫感を減らす
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+
+# --- Macネイティブな挙動 ---
+# タイトルバーを透明にしてスッキリさせる
+macos-titlebar-style = transparent
+# フルスクリーン時にMac標準の挙動にする
+macos-window-shadow = true
+# 入力中はマウスカーソルを隠す
+mouse-hide-while-typing = true
+
+# --- 操作性 ---
+# OptionキーをAltとして扱う（Vimなどのショートカット用）
+macos-option-as-alt = true
+# 選択しただけでクリップボードにコピー
+copy-on-select = true
+# クリップボードの読み書きを許可
+clipboard-read = allow
+clipboard-write = allow
+
+# --- カスタムシェーダー ---
+# カーソル移動時に炎の軌跡が出る
+custom-shader = shaders/cursor_blaze.glsl
+# 背景に星が流れるエフェクト
+custom-shader = shaders/starfield.glsl
+# Matrix風（使いたい時にコメント外す。CRTと入れ替え推奨）
+# custom-shader = shaders/inside-the-matrix.glsl

@@ -133,10 +133,6 @@ defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnab
 ###### Terminal ######
 # UTF-8のみを使用する
 defaults write com.apple.terminal StringEncodings -array 4
-# iTermのダークテーマをインストール
-open "${HOME}/init/Solarized Dark.itermcolors"
-# ターミナル終了時のプロンプトを非表示にする
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 
 ###### App Store ######

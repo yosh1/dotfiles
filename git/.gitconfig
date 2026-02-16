@@ -1,0 +1,9 @@
+[user]
+	name = yosh1
+	email = yoppy1125yoppy@gmail.com
+
+# もし dir が ~/descktop/gitlab なら
+[includeIf "gitdir:~/desktop/gitlab/"]
+  path = ~/desktop/gitlab/.gitconfig
+[init]
+	defaultBranch = main

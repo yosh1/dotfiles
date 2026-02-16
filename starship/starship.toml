@@ -1,0 +1,50 @@
+# Black & Yellow Starship Config
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$ruby\
+$python\
+$cmd_duration\
+$line_break\
+$character"""
+
+[character]
+success_symbol = "[](bold yellow)"
+error_symbol = "[](bold red)"
+
+[directory]
+style = "bold yellow"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "bold #ffd700"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold yellow"
+format = '([$all_status$ahead_behind]($style) )'
+
+[nodejs]
+symbol = " "
+style = "#ffd700"
+format = "[$symbol($version)]($style) "
+
+[ruby]
+symbol = " "
+style = "#ff5555"
+format = "[$symbol($version)]($style) "
+
+[python]
+symbol = " "
+style = "#5ec4c4"
+format = "[$symbol($version)]($style) "
+
+[cmd_duration]
+min_time = 2_000
+style = "bold #4a4a4a"
+format = "[ $duration]($style) "
