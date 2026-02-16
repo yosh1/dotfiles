@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "Limitless": {
+      "url": "https://api.limitless.ai/mcp",
+      "headers": {}
+    }
+  }
+}
