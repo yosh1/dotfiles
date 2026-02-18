@@ -38,7 +38,5 @@ clipboard-write = allow
 # --- カスタムシェーダー ---
 # カーソル移動時に炎の軌跡が出る
 custom-shader = shaders/cursor_blaze.glsl
-# 背景に星が流れるエフェクト
-custom-shader = shaders/starfield.glsl
 # Matrix風（使いたい時にコメント外す。CRTと入れ替え推奨）
 # custom-shader = shaders/inside-the-matrix.glsl
