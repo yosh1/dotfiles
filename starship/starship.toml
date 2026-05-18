@@ -1,5 +1,7 @@
 # Black & Yellow Starship Config
 
+command_timeout = 2000
+
 format = """
 $directory\
 $git_branch\
