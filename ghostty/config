@@ -6,12 +6,16 @@ adjust-cell-height = 10%
 font-family = "Hack Nerd Font Mono"
 
 # テーマ（トレンドのCatppuccinを採用。飽きたら "Tokyo Night" もおすすめ）
-theme = black-yellow
+theme = TokyoNight
 
 # --- ウィンドウ・透明度 ---
 # 背景を透過させてブラー（すりガラス効果）を入れる
-background-opacity = 0.45
-background-blur-radius = 80
+background-opacity = 0.7
+background-blur = macos-glass-clear
+# 透過背景でも文字が読めるように最低コントラストを確保（1.0=効果なし, 21=最大）
+minimum-contrast = 1.1
+# ボールド文字を明るい色で表示して視認性アップ
+bold-is-bright = true
 
 # ウィンドウ内の余白を入れて圧迫感を減らす
 window-padding-x = 10
