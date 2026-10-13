@@ -51,10 +51,11 @@
 | `mcp__slack-preferred-inc__*` | Preferred Inc. | `T048CC53BCY` | `A0C32RYC04E` |
 | `mcp__slack-q2a-inc__*` | Q2A Inc. | `T4U6W8M6K` | `A0C3Z5Z327J` |
 | `mcp__slack-aiosoken__*` | AIO総研株式会社 | `T09BZN2PF7W` | `A0C38EZDP6Y` |
+| `mcp__slack-macbee__*` | Macbee Planet（Enterprise Grid・改野は社外CAIO） | `T014J1MRAGN` | `A0C88TPBD0X` |
 
 * **投稿はデフォルト無効（読み取り専用）。** 有効化は各envの `SLACK_MCP_ADD_MESSAGE_TOOL`。
 * 依頼内容からワークスペースを特定し、曖昧なら確認してから実行すること。
-* 既存の `mcp__claude_ai_Slack__*`（claude.aiコネクタ）とツールが重複する。上記3つを優先。
+* 既存の `mcp__claude_ai_Slack__*`（claude.aiコネクタ）とツールが重複する。上記のサーバーを優先。
 
 構成の理由（変更前に確認すること）:
 
@@ -62,7 +63,7 @@
   team_id指定手段がなく、Claude CodeはMCPサーバーをURLで重複排除するため複数登録は不可。
 * `@modelcontextprotocol/server-slack` はアーカイブ済み。
   未修正のCVE-2025-34072（CVSS 9.3）があり使用しないこと。
-* 採用: korotovsky/slack-mcp-server をstdioで3プロセス起動。
+* 採用: korotovsky/slack-mcp-server をstdioでワークスペースごとに1プロセス起動。
 * トークンはUser OAuth（`xoxp`）。Bot token（`xoxb`）は `search.messages` を呼べず検索不可。
 
 設定・再登録手順・トークン検証: `~/slack-mcp-setup/README.md`
