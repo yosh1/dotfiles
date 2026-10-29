@@ -35,6 +35,14 @@ The setup script handles:
 - All symlinks (configs listed below)
 - macOS system preferences (optional, interactive)
 
+## WSL2 (Ubuntu) Setup — GPD Pocket4
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/yosh1/dotfiles/master/wsl/setup.sh | bash
+```
+
+Installs zsh, git, gh, tmux, mosh, starship, mise (Node LTS), Claude Code, links `wsl/.zshrc`, `wsl/.tmux.conf`, `git/.gitconfig`, `starship/starship.toml`, and generates a new SSH key for the device. Then run `gh auth login` and `claude`.
+
 ## Manual Symlinks
 
 If you prefer to link individual configs:
