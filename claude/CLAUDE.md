@@ -17,7 +17,7 @@
 
 * メールの検索・確認：Gmail MCP
 * 予定・空き時間の確認：Google Calendar MCP
-* タスクの確認・登録・更新：Todoist MCP
+* タスクの確認・登録・更新：**会社ごとに置き場が違う**。プリファード・Macbee・V4W・プリファードエージェンシー・Q2A・ニュークリエイター・オルグは各リポジトリの `TODO.md`（git）。Todoist MCP を使うのは AIO総研と改野個人（`me/`）だけ（正本は `~/Documents/github/CLAUDE.md` の表）
 * GitHubのIssue・PR・Actions・リポジトリ操作：GitHub CLI（`gh`）
 * ローカルの履歴・差分・コミット操作：`git`
 
@@ -52,6 +52,7 @@
 | `mcp__slack-q2a-inc__*` | Q2A Inc. | `T4U6W8M6K` | `A0C3Z5Z327J` |
 | `mcp__slack-aiosoken__*` | AIO総研株式会社 | `T09BZN2PF7W` | `A0C38EZDP6Y` |
 | `mcp__slack-macbee__*` | Macbee Planet（Enterprise Grid・改野は社外CAIO） | `T014J1MRAGN` | `A0C88TPBD0X` |
+| `mcp__slack-newcreator-org__*` | 特定非営利活動法人ニュークリエイター・オルグ（newCreator.org） | `TL6ETC1K2` | `A0CF7RZHLGH` |
 
 * **投稿はデフォルト無効（読み取り専用）。** 有効化は各envの `SLACK_MCP_ADD_MESSAGE_TOOL`。
 * 依頼内容からワークスペースを特定し、曖昧なら確認してから実行すること。
